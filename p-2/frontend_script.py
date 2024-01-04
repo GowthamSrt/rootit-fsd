@@ -3,7 +3,7 @@ import requests
 import subprocess
 
 # Start the Flask backend in a separate process
-backend_process = subprocess.Popen(["python", "backend_script.py"])
+backend_process = subprocess.Popen(["python", "p-2/backend_script.py"])
 
 # Wait for the backend to start (you may need to adjust the waiting time)
 import time

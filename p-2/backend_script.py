@@ -143,5 +143,5 @@ if __name__ == '__main__':
     # Create SQLite database if not exists
     if not os.path.exists('site.db'):
         db.create_all()
-    
+
     app.run(debug=True)
