@@ -1,0 +1,21 @@
+Project Documentation
+Introduction
+The Task Manager App is a Flask-based web application designed to facilitate user registration, login, and task management. The application provides a secure authentication system using JWT tokens and allows users to perform CRUD operations on tasks. The primary features include user registration, user login, retrieval of user-specific tasks, task creation, task updates, and task deletion.
+
+Getting Started
+Before running the application, ensure that you have Python and the required dependencies installed. Clone the project repository, create a virtual environment, and install the dependencies using the provided requirements.txt file. Then, run the Flask application using the provided script. The application will be accessible on http://localhost:5000.
+
+Project Structure
+The project follows a structured directory layout. It includes modules for database models, Marshmallow schemas, routes, and extensions. The configuration details, such as app configuration, database configuration, and JWT settings, are explained to guide users through customization.
+
+Usage
+Users can register by providing a unique username and password, and then log in to access their account. The application supports retrieving, creating, updating, and deleting tasks through API endpoints. API requests must include a valid JWT token for authentication.
+
+Security Considerations
+To enhance security, user passwords are hashed before storage, and JWT tokens are used for authentication. The documentation details the password hashing mechanism and outlines the security measures taken to protect user credentials and tokens.
+
+Troubleshooting
+Common issues and error messages are addressed in this section to assist users in resolving potential problems they may encounter during installation or usage.
+
+Contributing
+Users are encouraged to contribute by reporting issues or submitting pull requests. The documentation provides guidelines for raising issues and contributing code to improve the project.

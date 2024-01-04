@@ -1,0 +1,13 @@
+your_project/
+│
+├── app/
+│   ├── __init__.py
+│   ├── models.py
+│   ├── schemas.py
+│   ├── routes.py
+│   ├── config.py
+│   └── extensions.py
+│
+├── requirements.txt
+├── run.py
+└── site.db
