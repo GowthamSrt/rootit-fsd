@@ -48,7 +48,8 @@ def get_tasks():
     st.subheader("User Tasks")
 
     if st.session_state.access_token:
-        response = requests.get(f"{BASE_URL}/tasks", headers={"Authorization": f"Bearer {st.session_state.access_token}"})
+        headers = {"Authorization": f"Bearer {st.session_state.access_token}"}
+        response = requests.get(f"{BASE_URL}/tasks", headers=headers)
         if response.status_code == 200:
             tasks = response.json()
             st.write(tasks)
